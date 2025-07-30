@@ -1,0 +1,76 @@
+body {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color, #f9edd1); /* se puede personalizar */
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+header {
+  background-color: #8fdbd8;
+  color: white;
+  padding: 30px 10px;
+}
+
+.botones {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 15px 30px;
+  background-color: #b8dea4;
+  border: 2px solid #10b48e;
+  color: palevioletred; /* AQUÍ estaba faltando el punto y coma */
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+  border-radius: 5px;
+}
+
+/* Efecto de salto */
+.btn:active {
+  animation: saltar 0.3s ease;
+  background-color: #10b48e;
+  color: white;
+}
+
+@keyframes saltar {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(-10px); }
+  60% { transform: translateY(5px); }
+  100% { transform: translateY(0); }
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.imagen-final {
+  max-width: 100%;
+  height: auto;
+}
